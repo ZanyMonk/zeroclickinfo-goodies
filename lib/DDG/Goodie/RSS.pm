@@ -3,8 +3,7 @@ package DDG::Goodie::RSS;
 
 use DDG::Goodie;
 
-my @triggers = qw("rss");
-triggers start => @triggers;
+triggers start => "rss";
 
 handle query_lc => sub {
 
