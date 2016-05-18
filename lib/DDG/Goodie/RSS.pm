@@ -8,7 +8,7 @@ triggers start => "rss";
 handle query_lc => sub {
 
     return unless $_ =~ qr#^rss\s([\w\s]*)$#;
-    my search = $1;
+    my $search = $1;
 
     my $text = $search eq '' ? 'RSS Feed' : 'Search "' . $search . '" from RSS Feed';
 
